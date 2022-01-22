@@ -1,0 +1,211 @@
+/* 
+  Localizable.strings
+  Field_Survey
+
+  Created by Martin on 2016/03/31.
+  Copyright © 2016 BawtreeSoftware. All rights reserved.
+*/
+
+/*****************************
+ General Strings.
+ *****************************/
+"general_ok" = "Ok";
+"general_yes" = "Yes";
+"general_no" = "No";
+"general_cancel" = "Cancel";
+"general_station_info_heading" = "Station %@";
+
+/*****************************
+ Login Page.
+ *****************************/
+"login_username_placeholder" = "Username";
+"login_password_placeholder" = "Password";
+"login_login" = "Login";
+"login_err_no_username" = "You must fill in your username.";
+"login_err_no_password" = "You must fill in your password.";
+
+/*****************************
+ New Traverse Page.
+ *****************************/
+"new_trav_title_new" = "New Traverse";
+"new_trav_title_info" = "Traverse Information";
+"new_trav_basic_info" = "Basic Information";
+"new_trav_name" = "* Name";
+"new_trav_description" = "Description";
+"new_trav_crew" = "Crew";
+"new_trav_date_created" = "Date Created";
+"new_trav_start_station" = "Start Station";
+"new_trav_start_index" = "Start Index";
+"new_trav_create_traverse" = "CREATE TRAVERSE";
+"new_trave_save_changes" = "SAVE CHANGES";
+"new_trav_err_name_required" = "The name field cannot be empty.";
+"new_trav_err_invalid_index" = "Index value is invalid.";
+"new_trav_err_invalid_index_empty" = "The start index cannot be empty.";
+
+/*****************************
+ Traverse List Page.
+ *****************************/
+"trav_list_delete_traverse" = "Are you sure you want to delete this traverse?";
+"trav_list_export_title" = "Export";
+"trav_list_export_message" = "How do you want to export the file?";
+"trav_list_export_email" = "Email";
+"trav_list_export_itunes" = "iTunes";
+"trav_list_export_email_subject" = "TerrainTools Field: '%@' Export";
+
+/*****************************
+ Loading screen.
+ *****************************/
+"loading_export_data" = "Exporting data, please wait.";
+
+/*****************************
+ Traverse List Cell.
+ *****************************/
+"trav_list_cell_date_created" = "Date Created";
+"trav_list_cell_description" = "Description";
+"trav_list_cell_start" = "Start";
+
+/*****************************
+ Traverse Edit Page.
+ *****************************/
+"trav_edit_cl_shots" = "C/L Shots";
+"trav_edit_side_shots" = "Side Shots";
+"trav_edit_station_index" = "Index";
+"trav_edit_station" = "Station";
+"trav_edit_shot_type" = "Type";
+"trav_edit_shot_fore_azim" = "Fore Azim";
+"trav_edit_shot_hd" = "HD";
+"trav_edit_shot_sd" = "SD";
+"trav_edit_shot_slp" = "Slp %";
+"trav_edit_side_ssl" = "SSL Slp % / SD";
+"trav_edit_side_ssr" = "SSR Slp % / SD";
+"trav_edit_side_gnd" = "GND";
+"trav_edit_side_crk" = "CRK";
+"trav_edit_side_label" = "Label";
+"trav_edit_delete_shot" = "Are you sure you want to delete this shot?";
+"trav_edit_insert_new_entry" = "Would you like to insert a new entry?";
+"trav_edit_insert_above" = "Insert Above";
+"trav_edit_insert_below" = "Insert Below";
+
+/*****************************
+ Traverse Edit Info Page
+ *****************************/
+"trav_edit_info_add_p1" = "To add a new station:";
+"trav_edit_info_add_p2" = " tap the (+) to add a new station after your last station";
+"trav_edit_info_insert_p1" = "To insert a station between existing stations:";
+"trav_edit_info_insert_p2" = " hold on a pair of input rows to insert a new station above it";
+"trav_edit_info_edit_p1" = "To edit an existing station:";
+"trav_edit_info_edit_p2" = " tap on any row to edit the existing station";
+"trav_edit_info_delete_p1" = "To delete a station:";
+"trav_edit_info_delete_p2" = " swipe left to delete a pair of rows (you will receive a confirmation prompt).";
+"trav_edit_info_first_edit_p1" = "If this is your first time editing this traverse:";
+"trav_edit_info_first_edit_p2" = " Your first station has already been started based on the information that you input when creating the traverse. Touch in the pair of rows highlighted in orange to edit.";
+"trav_edit_info_err_p1" = "ERROR MESSAGE “Cannot create another station; station at index (x) is incomplete.”";
+"trav_edit_info_err_p2" = " You have already input data and you have an incomplete row (ie. The shot type, fore azim, HD/SD, and Slp % is missing). You have two options:";
+"trav_edit_info_option1_p1" = "1. Complete the missing shot data.";
+"trav_edit_info_option1_p2" = " The incomplete row is highlighted in orange. Tap on the row with the orange index number, complete your missing shot fields.";
+"trav_edit_info_option2_p1" = "2. Delete the incomplete row.";
+"trav_edit_info_option2_p2" = " On the row highlighted with the orange index number, swipe left to delete.";
+
+/*****************************
+ Station Defaults Page.
+ *****************************/
+"station_defaults_err_shot" = "Shot type cannot be empty.";
+"station_defaults_err_fore_azim" = "Fore Azumuth cannot be empty.";
+"station_defaults_err_distance" = "A distance type must be filled in.";
+"station_defaults_err_slp_per" = "Slope percentage cannot be empty.";
+
+/*****************************
+ Settings Page.
+ *****************************/
+"settings_title" = "Account Settings";
+"settings_organization" = "Organization";
+"settings_license_expiration" = "License Expiration";
+"settings_current_user" = "Current User";
+"settings_logout" = "Logout";
+"settings_sync" = "Sync License";
+"settings_logout_message" = "Logout will cause all the Traverse information to be deleted. Are you sure?";
+"settings_license_sync_success" = "License information is now up to date";
+
+/*****************************
+ Navigation Bar.
+ *****************************/
+"navigation_bar_insert_shot" = "Insert Shot";
+"navigation_bar_add_shot" = "Add New Shot";
+
+/*****************************
+ Side Shot Entry Page.
+ *****************************/
+"side_shot_title" = "Side Shots";
+"side_shot_select_mode" = "SELECT MODE";
+"side_shot_slope_distance" = "Slope Distance";
+"side_shot_horizontal_distance" = "Horizontal Distance";
+"side_shot_slp_percentage" = "Slp%";
+"side_shot_code" = "Side Shot Code";
+"side_shot_turning_point" = "Turning Point";
+"side_shot_left" = "Side Shot Left";
+"side_shot_right" = "Side Shot Right";
+"side_shot_left_cell" = "Left %@";
+"side_shot_right_cell" = "Right %@";
+
+/*****************************
+ Coordinates Page.
+ *****************************/
+"coord_title" = "C/L Coordinates";
+"coord_coordinates" = "Coordinates";
+"coord_easting" = "Easting (X)";
+"coord_northing" = "Northing (Y)";
+"coord_elevation" = "Elevation (Z)";
+"coord_xy_abs" = "X, Y Absolute";
+"coord_z_abs" = "Z Absolute";
+
+/*****************************
+ Station & Shot Page.
+ *****************************/
+"station_shot_title" = "C/L Station & Shot";
+"station_shot_shot" = "Shot";
+"station_shot_type" = "Type";
+"station_shot_foreazim" = "Fore Azimuth";
+"station_shot_slp_distance" = "Slope Distance";
+"station_shot_hor_distance" = "Horizontal Distance";
+"station_shot_slp_percentage" = "Slope %";
+"station_shot_ground_layer" = "Ground Layer Information";
+"station_shot_ground_1" = "Ground Layer 1";
+"station_shot_ground_2" = "Ground Layer 2";
+"station_shot_ground_3" = "Ground Layer 3";
+"station_shot_depth" = "Depth";
+"station_shot_creek_1" = "Creek (Culvert) Size Information";
+"station_shot_creek_2" = "Diameter in mm (or inches), Height and Width in meters (or feet)";
+"station_shot_pipe" = "Pipe";
+"station_shot_diameter" = "Diameter";
+"station_shot_box" = "Box";
+"station_shot_height" = "Height";
+"station_shot_width" = "Width";
+"station_shot_label" = "Label";
+
+/*****************************
+ Data Controller.
+ *****************************/
+"data_controller_err_no_shot_type" = "A shot type must be selected.";
+"data_controller_err_cant_make_invalid_station_exists" = "Cannot create another station; station at index %@ is incomplete.";
+"data_controller_err_no_fore_azimuth_on_non_ifs" = "Fore azimuth cannot be blank. A 0 value has been enforced.";
+
+/*****************************
+ Working Page.
+ *****************************/
+"working_cancel" = "Cancel";
+"working_exporting_data" = "Exporting data, please wait.";
+"working_attempting_login" = "Logging in, please wait.";
+"working_syncing_license" = "Syncing license, please wait.";
+"working_attempting_logout" = "Logging out, please wait.";
+
+/*****************************
+ Server error procrssing.
+ *****************************/
+"err_processing_data" = "An error occurred processing the server response, please try again later.";
+"server_err_incomplete_request" = "An unexpected error ocurred. Please contact us at 1-866-519-6222 (Toll Free) or 604-519-6222 (International).";
+"server_err_user_not_fully_setup" = "This user has not been fully configured. Please contact us at 1-866-519-6222 (Toll Free) or 604-519-6222 (International).";
+"server_err_user_inactive" = "This user is inactive. Please contact us at 1-866-519-6222 (Toll Free) or 604-519-6222 (International).";
+"server_err_bad_credentials" = "Invalid username and or password, please try again.";
+"server_err_wrong_request_method" = "You should never see this message.";
+"server_err_subscription_expired" = "Your subscription has expired. Please contact us at 1-866-519-6222 (Toll Free) or 604-519-6222 (International). Your data is saved and will be accessible when your license is renewed.";
+"server_err_account_already_in_use" = "This account is already being used on another device. If this is a mistake contact us at 1-866-519-6222 (Toll Free) or 604-519-6222 (International).";

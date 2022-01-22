@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="SideShot" representedClassName="SideShot" syncable="YES">
+        <attribute name="shShotCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shSlopeDistance" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="shSlopePercentage" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="shTurningPoint" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="relStationLeftshots" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" inverseName="relLeftSidshots" inverseEntity="Station" syncable="YES"/>
+        <relationship name="relStationRightshots" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" inverseName="relRightSideshots" inverseEntity="Station" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES">
+        <attribute name="calcForeAzimuth" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="calcHorizontalDistance" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="calcSlopeDistance" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="calcSsl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calcSsr" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calcStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="calcStationIndex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coEasting" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="coElevation" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="coNorthing" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="shDistanceMode" optional="YES" attributeType="Integer 32" defaultValueString="1" syncable="YES"/>
+        <attribute name="stBoxHeight" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="stBoxWidth" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="stDepth1" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stDepth2" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stDepth3" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stForeAzimuth" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stGround1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stGround2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stGround3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stHorizontalDistance" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stPipeDiameter" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="stSlopeDistance" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stSlopePercentage" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relDefaults" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="StationDefaults" inverseName="relStation" inverseEntity="StationDefaults" syncable="YES"/>
+        <relationship name="relLeftSidshots" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SideShot" inverseName="relStationLeftshots" inverseEntity="SideShot" syncable="YES"/>
+        <relationship name="relRightSideshots" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SideShot" inverseName="relStationRightshots" inverseEntity="SideShot" syncable="YES"/>
+        <relationship name="relTraverse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Traverse" inverseName="relStation" inverseEntity="Traverse" syncable="YES"/>
+    </entity>
+    <entity name="StationDefaults" representedClassName="StationDefaults" syncable="YES">
+        <attribute name="stForeAzimuth" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stHorizontalDistance" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stSlopeDistance" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stSlopePercentage" optional="YES" attributeType="Decimal" syncable="YES"/>
+        <attribute name="stType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relStation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" inverseName="relDefaults" inverseEntity="Station" syncable="YES"/>
+    </entity>
+    <entity name="Traverse" representedClassName="Traverse" syncable="YES">
+        <attribute name="trCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trCrew" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trLastModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trStartIndex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trStation" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="relStation" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Station" inverseName="relTraverse" inverseEntity="Station" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SideShot" positionX="279" positionY="389" width="128" height="133"/>
+        <element name="Station" positionX="-45" positionY="81" width="128" height="495"/>
+        <element name="StationDefaults" positionX="198" positionY="603" width="128" height="133"/>
+        <element name="Traverse" positionX="-272" positionY="413" width="128" height="163"/>
+    </elements>
+</model>
